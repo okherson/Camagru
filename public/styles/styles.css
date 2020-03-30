@@ -1,0 +1,418 @@
+*{
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background-image: url(../images/page_back_ground.jpeg);
+	background-repeat: no-repeat;
+	background-position: center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit; /* наслідує батьківський клас*/
+}
+h1 {
+	margin: 0;
+}
+
+.header, .mainBlock, .footer {
+	width: 100%;
+	text-align: center;
+}
+.mainBlock {
+	min-height: 78%;
+	margin-top: 2%;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	/* background-color: rgba(26, 138, 182, 0.6); */
+}
+.content {
+	max-width: 1200px;
+	width: 80%;
+	height: 100%;
+	display: inline-block;
+}
+
+.subMenu {
+	height: 30px;
+}
+
+#subMenu-logo a {
+	margin-top: 5px;
+	float: left;
+	width: 100px;
+	font-weight: 900;
+}
+
+.subMenu-info {
+	float: right;
+}
+
+.menu {
+	width: 100%;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 5px;
+}
+
+.disabled {
+	display: none;
+}
+
+.nav {
+	height: 30px;
+	width: 70%;
+	margin: 0;
+	margin-left: 13%;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-item > a {
+	text-decoration: none;
+	color: inherit; /* наслідує батьківський клас*/
+	margin-bottom: 5px;
+}
+
+.nav-item, .subMenuText {
+	float: left;
+	padding: 5px;
+	margin-left: 10px;
+	border-style: none;
+	border-radius: 5px;
+}
+
+.nav-item:hover {
+	color:rgb(255, 128, 0);
+	background-color: rgba(0, 61, 85, 0.5);
+}
+
+.nav-link {
+	z-index: 7;
+	text-decoration: none;
+	color: black;
+}
+
+.nav_active {
+	color:rgb(255, 128, 0);
+}
+
+.footer {
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.footer p {
+	color: black;
+}
+
+.resultInfoBlock {
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+
+.warningBlock {
+	background-color: rgba(249, 199, 1, 0.5);
+}
+
+.errorBlock {
+	background-color: rgba(249, 0, 0, 0.5);
+}
+
+.successBlock {
+	background-color: rgba(0, 255, 0, 0.5);
+}
+
+.iC_password {
+	/* position: absolute; */
+	float: right;
+	position: relative;
+	margin-top: -27px;
+	margin-right: 5px;
+	opacity: 0.5;
+}
+
+.iC_password:hover {
+	opacity: 0.8;
+}
+
+/* ******************************	inex.html	************************************/
+
+.photoEditor-imgCover {
+	width: 20%;
+	background-color: rgba(255, 255, 255, 0.6);
+	color: black;
+	float: left;
+	height: 560px;
+	border: solid;
+	border-color: rgb(168, 166, 166);
+	border-width: 2px;
+
+}
+
+#photoEditor-imgCover-addCower {
+	margin-top: 20px;
+}
+
+.photoEditor-camera {
+	width: 80%;
+	float: left;
+	height: 560px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: solid;
+	border-color: rgb(168, 166, 166);
+	border-width: 2px;
+	border-left: hidden;
+}
+
+.photoEditor-locationsNames {
+	height: 5%;
+	border-bottom: solid;
+	border-color: rgb(168, 166, 166);
+	border-width: 2px;
+}
+
+.photoEditor-camera-newPhoto {
+	height: 70%;
+	border-bottom: solid;
+	border-color: rgb(168, 166, 166);
+	border-width: 2px;
+}
+
+.photoEditor-logo {
+	height: 40px;
+	opacity: 0.5;
+}
+
+.photoEditor-logo:hover {
+	height: 40px;
+	opacity: 1;
+}
+
+#snap {
+	margin-top: -8px;
+}
+
+
+#download_photo {
+	margin-top: 5%;
+	margin-left: 1%;
+}
+
+
+.photoEditor-camera-readyPhotos {
+	height: 25%;
+}
+
+.editorControlPanel {
+	margin-left: 35%;
+	width: 360px;
+}
+
+.btn {
+	width:150px;
+	height: 30px;
+	margin-top: 15px;
+	float: left;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+#resetBtn, #publicateBtn {
+	margin: 20px;
+}
+
+.resetBtn {
+	background-color: rgba(255, 0, 0, 0);
+	color:rgb(32, 126, 167);
+	border-color: rgb(32, 126, 167);
+	border-width: 2px;
+}
+
+.resetBtn:hover {
+	border-color: rgb(5, 95, 134);
+	color: rgb(5, 95, 134);
+}
+
+.confirmBtn {
+	background-color:rgb(32, 126, 167);
+	color: white;
+	border-style: hidden;
+}
+
+.confirmBtn:hover {
+	background-color: rgb(5, 95, 134);
+	;
+}
+
+
+
+/*********************************** MESSAGES **************************/
+
+
+.table {
+	border: solid;
+	/* border-color: grey; */
+	float: left;
+	border-color: rgb(168, 166, 166);
+}
+
+.table > thead {
+	/* background-color: rgba(0, 0, 0, 0.8); */
+	border-bottom: solid;
+	border-color: rgb(168, 166, 166);
+}
+
+#friendList {
+	width: 25%;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+#messageList {
+	width: 73%;
+	margin-left: 2%;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/******************************* accountController ***********************/
+
+.btn-center {
+	margin-left: calc((100% - 120px)/2);
+}
+
+.account_form {
+	margin-top: 20px;
+	padding: 20px;
+	max-width: 600px;
+	background-color: rgba(255, 255, 255, 0.4);
+	/* position: relative; */
+	margin-left: calc((100% - 600px)/2);
+	border-radius: 5px;
+}
+
+.authorization_api_form {
+	height: 24px;
+}
+
+.authorization_api-btn {
+	border-radius: 5px;
+	float: left;
+	margin-left: 17%;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.authorization_api-btn > img {
+	margin-top: 5px;
+	width: 15px;
+}
+
+.form-group {
+	height: 50px;
+	width: 100%;
+}
+
+.form-label {
+	float: left;
+}
+
+.form-label.text {
+	float: left;
+}
+
+
+.form-control {
+	border-radius: 5px;
+	float: left;
+	height: 30px;
+	/* width: 460px; */
+	width: 100%;
+}
+
+.form_change_password {
+	height: 30px;
+	margin-top: 20px;
+}
+
+
+/*				login form				*/
+
+.b-popup{
+	width:100%;
+	margin-left: auto;
+    min-height:100%;
+    /* background-color: rgba(0, 255, 0, 0.3); */
+    background-color: rgba(0,0,0,0.6);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+
+.b-popup .b-popup-content{
+	margin-left: auto;
+	margin-right: auto;
+    margin:10% auto 0 auto;
+	max-width: 300px;
+    height: 100px;
+    padding:10px;
+    background-color: white;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.b-popup-content p {
+	margin-top: 10px;
+}
+
+#popUp-cross {
+	height: 10px;
+	float: right;
+}
+
+#poUp-btn {
+	width: 150px;
+	border-radius: 5px;
+	margin: 10px auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width:319px), (max-height:567px) {
+	body {
+		display: none;
+	}
+} */
